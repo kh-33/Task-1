@@ -1,0 +1,377 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter";
+}
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  height: 55px;
+  background-color: #0b9586;
+  padding: 10px 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.header-content img {
+  margin-left: 5px;
+  width: 150px;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+nav li a {
+  font-weight: 400px;
+  text-align: center;
+  min-width: 75px;
+  margin: 0px 5px;
+}
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #0dab99;
+  border: #01463e 1px solid;
+}
+
+.img-overlay {
+  opacity: 0.4;
+  background-color: #0b9586;
+  border-radius: 10px;
+}
+
+nav .call {
+  line-height: 22px;
+  color: #ffffff;
+}
+nav .num {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.intro {
+  background-image: url("../images/solar-panels-meadow-1.png");
+  height: 650px;
+  padding-left: 10%;
+  padding-top: 10%;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.desc {
+  width: 450px;
+  padding: 25px;
+}
+.intro h1 {
+  font-size: 40px;
+  padding-bottom: 14px;
+}
+
+.btn {
+  margin-top: 14px;
+  border-radius: 109px;
+  padding: 10px 25px;
+}
+
+.call-btn {
+  background-color: #3cab90;
+}
+
+.request-btn {
+  background-color: #ffbb1c;
+}
+
+.info {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.installer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.install-info {
+  flex: 1;
+}
+
+.install-info h1 {
+  font-size: 42px;
+}
+p {
+  font-size: 20px;
+}
+
+ol {
+  padding-left: 15px;
+  padding-top: 10px;
+  list-style: none;
+  counter-reset: li;
+}
+
+ol li::before {
+  counter-increment: li;
+  content: counter(li);
+  color: #84bd3a;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.img-container {
+  position: relative;
+  max-width: 45%;
+}
+
+.img-container img {
+  height: 90%;
+  width: 100%;
+  display: block;
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 170px;
+  height: 150px;
+  background-color: #ffbb1c;
+  border-radius: 25%;
+  background-image: url("../images/solar-charge.png");
+  /* background-size: cover; */
+}
+.cta1 {
+  background-image: url(../images/windmill.png);
+  background-size: contain;
+}
+
+.cta {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  gap: 32px;
+}
+.cta .desc {
+  padding: 80px;
+  color: white;
+}
+
+.cta .desc h2 {
+  padding-bottom: 10px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec {
+  overflow: hidden;
+  margin: auto;
+  width: 85%;
+  gap: 40px;
+}
+.intros {
+  padding-top: 10px;
+  /* padding-top: 15px; */
+  margin: auto;
+  left: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.intros h2 {
+  font-size: 35px;
+}
+
+.kit {
+  display: block;
+  float: left;
+  width: 30%;
+  position: relative;
+  padding: 17px 13px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.kit-pic {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.kit-pic img {
+  width: 100%;
+}
+.kit-info a {
+  color: #84bd3a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.kit-info p {
+  font-size: 16px;
+}
+.mid {
+  margin: 0 5%;
+}
+.cta2 {
+  margin-top: 10px;
+  background-image: url("../images/cta.png");
+}
+
+.overlay {
+  padding: 25px;
+  margin: 15% 10%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  color: white;
+  content: "";
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 42px;
+}
+.overlay p {
+  font-size: 21px;
+}
+
+.content {
+  width: 50%;
+}
+
+.dis {
+  display: flex;
+  float: left;
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 20px;
+}
+.heading {
+  gap: 24px;
+  width: 50%;
+}
+.heading h1 {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.cont {
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: #3cab90 3px solid;
+  border-radius: 10px;
+}
+.cont .img-overlay img {
+  opacity: 0.4;
+  width: 100%;
+}
+
+.cont a {
+  color: #3cab90;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.icon {
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.value {
+  border: #3cab90 2px solid;
+  padding: 10px;
+  background-color: #e7f8f4;
+  margin: 15px;
+}
+.person {
+  display: flex;
+  padding: 15px;
+}
+.per {
+  padding-left: 9px;
+  font-size: 12px;
+}
+.per h6 {
+  font-size: 15px;
+}
+.box {
+  width: 50%;
+}
+.box h4 {
+  color: #3cab90;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  border: gray 1px solid;
+  border-radius: 50%;
+  /* margin: auto; */
+  margin: 5px;
+  padding: 5px;
+  height: 30px;
+}
+
+footer {
+  background-color: #283646;
+}
+.text {
+  border: #ffffff 1px solid;
+  color: #ffffff;
+  background-color: #586675;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.img-footer {
+  margin: 10px;
+  width: 50%;
+}
+
+.footer {
+  display: flex;
+  margin: 10px;
+  padding-top: 15px;
+}
+
+.img-footer li a {
+  font-size: 10px;
+}
+
+.foot {
+  display: flex;
+  color: gray;
+  font-size: 12px;
+  padding: 15px;
+}
+.submenu {
+  font-size: 12px;
+  width: 50%;
+  padding-right: 5px;
+}
